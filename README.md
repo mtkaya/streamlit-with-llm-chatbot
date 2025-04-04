@@ -33,3 +33,43 @@ Bu proje, **Streamlit**, **FastAPI** ve **Ollama** kullanarak yerel olarak çal�
 ```bash
 python>=3.8
 ollama (kurulu ve modeller yüklenmiş olmalı)
+
+## ⚙️ Kurulum
+
+git clone https://github.com/kullanici-adin/streamlit-with-llm-chatbot.git
+cd streamlit-with-llm-chatbot
+python -m venv venv
+source venv/bin/activate  # Windows: .\venv\Scripts\activate
+pip install -r requirements.txt
+
+##🚀 Kullanım
+
+1. Ollama Modelini Başlat
+ollama run llama3
+2. FastAPI Server'ı Başlat
+uvicorn api:app --reload --port 8000
+3. Streamlit Arayüzünü Başlat
+streamlit run app.py
+
+## 📤 Hugging Face Spaces'e Yayınlama
+
+Hugging Face hesabı oluştur.
+Yeni bir Space aç: Tipi Streamlit olsun.
+Bu 3 dosyayı yükle:
+app.py
+requirements.txt
+README.md
+Space otomatik olarak başlatılacaktır.
+
+## 📁 Dosya Yapısı
+
+streamlit-with-llm-chatbot/
+├── app.py              # Streamlit arayüzü
+├── api.py              # FastAPI API servisi
+├── requirements.txt    # Bağımlılıklar
+├── README.md           # Proje tanıtımı
+└── venv/               # Sanal ortam (push etme!)
+## 📝 Geliştirme Notları
+
+Şimdilik sadece llama3, phi3, mistral destekleniyor.
+İlerleyen sürümlerde chat history, token sayacı, benchmark ve loglama eklenecek.
