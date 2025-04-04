@@ -71,6 +71,8 @@ streamlit-with-llm-chatbot/
 ├── README.md           # Proje tanıtımı
 └── venv/               # Sanal ortam (push etme!)
 
+
+```
 ## 📝 Geliştirme Notları
 
 Şimdilik sadece llama3, phi3, mistral destekleniyor.
