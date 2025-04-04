@@ -30,7 +30,7 @@ Bu proje, **Streamlit**, **FastAPI** ve **Ollama** kullanarak yerel olarak çal�
 
 ## 📦 Gereksinimler
 
-```bash
+
 python>=3.8
 ollama (kurulu ve modeller yüklenmiş olmalı)
 
@@ -69,6 +69,7 @@ streamlit-with-llm-chatbot/
 ├── requirements.txt    # Bağımlılıklar
 ├── README.md           # Proje tanıtımı
 └── venv/               # Sanal ortam (push etme!)
+
 ## 📝 Geliştirme Notları
 
 Şimdilik sadece llama3, phi3, mistral destekleniyor.
