@@ -63,6 +63,7 @@ Space otomatik olarak başlatılacaktır.
 
 ## 📁 Dosya Yapısı
 
+```bash 
 streamlit-with-llm-chatbot/
 ├── app.py              # Streamlit arayüzü
 ├── api.py              # FastAPI API servisi
